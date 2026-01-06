@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import VisitorTracker from "@/components/VisitorTracker";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,8 +17,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Nikhil Juluri | AI/ML Engineer",
-  description: "Portfolio of Nikhil Juluri - AI/ML Engineer & Full-Stack Developer specializing in Healthcare AI.",
-  keywords: ["AI Engineer", "Machine Learning", "Full Stack Developer", "Healthcare AI", "Nikhil Juluri", "Portfolio"],
+  description:
+    "Portfolio of Nikhil Juluri - AI/ML Engineer & Full-Stack Developer specializing in Healthcare AI.",
+  keywords: [
+    "AI Engineer",
+    "Machine Learning",
+    "Full Stack Developer",
+    "Healthcare AI",
+    "Nikhil Juluri",
+    "Portfolio",
+  ],
 };
 
 export default function RootLayout({
@@ -30,10 +39,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
+        {/* Visitor tracking (runs once per visit) */}
+        <VisitorTracker />
+
         <Header />
-        <main className="min-h-screen">
-          {children}
-        </main>
+
+        <main className="min-h-screen">{children}</main>
+
         <Footer />
       </body>
     </html>
