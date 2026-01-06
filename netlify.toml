@@ -1,6 +1,8 @@
 [build]
   command = "bun run build"
-  functions = "netlify/functions"
+  
+  [functions]
+  directory = "netlify/functions"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
