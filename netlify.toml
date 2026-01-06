@@ -1,7 +1,8 @@
 [build]
   command = "bun run build"
+  publish = ".next"
   
-  [functions]
+[functions]
   directory = "netlify/functions"
 
 [[plugins]]
