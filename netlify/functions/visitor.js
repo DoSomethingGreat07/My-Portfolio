@@ -1,21 +1,23 @@
 export async function handler(event) {
     const h = event.headers;
 
-    const ip =
-        h["x-forwarded-for"]?.split(",")[0] ||
-        h["client-ip"] ||
-        "Unknown";
-
+    const ip = h["x-forwarded-for"]?.split(",")[0] || h["client-ip"] || "Unknown";
     const userAgent = h["user-agent"] || "Unknown";
     const language = h["accept-language"] || "Unknown";
     const referer = h["referer"] || "Direct";
 
     // Bot filter
     if (/bot|crawler|spider|crawling/i.test(userAgent)) {
-        return { statusCode: 200 };
+        return { statusCode: 200, body: "Bot ignored" };
     }
 
-    // Geo lookup (legal & common)
+    const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
+    if (!webhookUrl) {
+        console.error("DISCORD_WEBHOOK_URL is not defined!");
+        return { statusCode: 500, body: "Webhook not configured" };
+    }
+
+    // Get geo info
     const geoRes = await fetch(`https://ipapi.co/${ip}/json/`);
     const geo = await geoRes.json();
 
@@ -47,7 +49,7 @@ ${new Date().toUTCString()}
     `
     };
 
-    await fetch(process.env.DISCORD_WEBHOOK_URL, {
+    await fetch(webhookUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(message)
