@@ -1,7 +1,7 @@
 export async function handler(event) {
     const h = event.headers;
 
-    const ip = h["x-forwarded-for"]?.split(",")[0] || h["client-ip"] || "Unknown";
+    const ip = h["x-nf-client-connection-ip"] || h["x-forwarded-for"]?.split(",")[0] || h["client-ip"] || "Unknown";
     const userAgent = h["user-agent"] || "Unknown";
     const language = h["accept-language"] || "Unknown";
     const referer = h["referer"] || "Direct";
@@ -17,43 +17,67 @@ export async function handler(event) {
         return { statusCode: 500, body: "Webhook not configured" };
     }
 
-    // Get geo info
-    const geoRes = await fetch(`https://ipapi.co/${ip}/json/`);
-    const geo = await geoRes.json();
+    // Get geo info with fallback
+    let geo = {};
+    try {
+        const geoRes = await fetch(`http://ip-api.com/json/${ip}?fields=status,message,country,countryCode,region,regionName,city,zip,lat,lon,timezone,isp,org,as,query`);
+        const data = await geoRes.json();
+
+        if (data.status === "success") {
+            geo = {
+                country: data.country,
+                region: data.regionName,
+                city: data.city,
+                timezone: data.timezone,
+                lat: data.lat,
+                lon: data.lon,
+                isp: data.isp,
+                org: data.org,
+                asn: data.as
+            };
+        }
+    } catch (error) {
+        console.error("Geo lookup failed:", error);
+    }
 
     const message = {
         content: `
-🔔 **New Visitor – nikhiljuluri.online**
+NEW VISITOR - nikhiljuluri.online
 
-🌐 **Network**
-IP: ${ip}
-ISP: ${geo.org || "N/A"}
-ASN: ${geo.asn || "N/A"}
+NETWORK INFO
+IP Address: ${ip}
+ISP: ${geo.isp || "Unknown"}
+Organization: ${geo.org || "Unknown"}
+ASN: ${geo.asn || "Unknown"}
 
-📍 **Location (Approx)**
-Country: ${geo.country_name || "N/A"}
-Region: ${geo.region || "N/A"}
-City: ${geo.city || "N/A"}
-Timezone: ${geo.timezone || "N/A"}
-Lat / Long: ${geo.latitude || "N/A"}, ${geo.longitude || "N/A"}
+LOCATION
+Country: ${geo.country || "Unknown"}
+Region: ${geo.region || "Unknown"}
+City: ${geo.city || "Unknown"}
+Timezone: ${geo.timezone || "Unknown"}
+Coordinates: ${geo.lat || "N/A"}, ${geo.lon || "N/A"}
 
-💻 **Device**
-User-Agent: ${userAgent}
+DEVICE INFO
+User Agent: ${userAgent}
 Language: ${language}
 
-🔗 **Referrer**
+REFERRER
 ${referer}
 
-⏰ **Time**
+TIMESTAMP
 ${new Date().toUTCString()}
-    `
+        `.trim()
     };
 
-    await fetch(webhookUrl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(message)
-    });
+    try {
+        await fetch(webhookUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(message)
+        });
+    } catch (error) {
+        console.error("Discord webhook failed:", error);
+    }
 
     return {
         statusCode: 200,
