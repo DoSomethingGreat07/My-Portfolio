@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  /* Dark Theme by Default */
+  --background: #0A0A0A;
+  --foreground: #FFFFFF;
+  
+  /* Custom Colors */
+  --primary: #8B5CF6; /* Violet 500 */
+  --primary-dark: #7C3AED; /* Violet 600 */
+  --secondary: #1A1A1A;
+  --accent: #EC4899; /* Pink 500 */
+  --muted: #9CA3AF;
+  --border: #2D2D2D;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  antialiased: true;
+}
+
+/* Custom Utilities */
+@utility text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, var(--primary), var(--accent));
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
