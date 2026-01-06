@@ -1,6 +1,6 @@
 [build]
   command = "bun run build"
-  publish = ".next"
+  functions = "netlify/functions"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
