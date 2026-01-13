@@ -18,12 +18,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Nikhil Juluri | AI/ML Engineer",
   description:
-    "Portfolio of Nikhil Juluri - AI/ML Engineer & Full-Stack Developer specializing in Healthcare AI.",
+    "Portfolio of Nikhil Juluri - AI/ML Engineer & Full-Stack Developer.",
   keywords: [
     "AI Engineer",
     "Machine Learning",
     "Full Stack Developer",
-    "Healthcare AI",
     "Nikhil Juluri",
     "Portfolio",
   ],
