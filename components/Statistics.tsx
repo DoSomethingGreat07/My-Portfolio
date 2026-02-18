@@ -9,14 +9,14 @@ export default async function Statistics() {
     const stats = [
         {
             label: "Years Experience",
-            value: 2,
+            value: 3.5,
             suffix: "+",
             icon: Calendar,
             description: "Building Enterprise Solutions"
         },
         {
             label: "Projects Completed",
-            value: gitHubStats.repos, // Dynamically from GitHub
+            value: 25,
             suffix: "+",
             icon: Layers,
             description: "Open Source & Professional"
@@ -29,8 +29,8 @@ export default async function Statistics() {
             description: "Across all repositories"
         },
         {
-            label: "Technolgies Mastered",
-            value: 14,
+            label: "Technologies Mastered",
+            value: 50,
             suffix: "+",
             icon: Terminal,
             description: "Full Stack & AI/ML Stack"

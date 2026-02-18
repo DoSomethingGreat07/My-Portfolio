@@ -10,7 +10,7 @@ const education = [
         school: "University of Illinois Chicago",
         period: "Aug 2024 – May 2026 (Expected)",
         gpa: "3.8",
-        coursework: "Big Data Mining, Data Mining and Text Mining, Cloud Computing, Computer Algorithms, Database Management Systems, Machine Learning"
+        coursework: "Cloud Computing, Algorithms, DBMS, Big Data Mining, Text Mining, ML on Graphs, Deep Learning with NLP"
     },
     {
         degree: "Bachelor of Engineering in Electronics and Communication",

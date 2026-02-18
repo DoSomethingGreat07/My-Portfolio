@@ -7,59 +7,49 @@ import { Code, Brain, Cloud, Layers, Database } from "lucide-react";
 
 const skillsData = [
     {
-        category: "Programming Languages",
+        category: "Programming & Data",
         icon: Code,
         skills: [
             { name: "Python", level: 95 },
+            { name: "TypeScript/JavaScript", level: 90 },
             { name: "Java", level: 85 },
-            { name: "C++", level: 80 },
-            { name: "C", level: 80 },
-            { name: "SQL (MSSQL)", level: 85 },
-            { name: "JavaScript/TypeScript", level: 85 }
-        ]
-    },
-    {
-        category: "Data Science & ML",
-        icon: Brain,
-        skills: [
+            { name: "SQL", level: 90 },
             { name: "NumPy & Pandas", level: 95 },
-            { name: "Scikit-learn/SciPy", level: 90 },
-            { name: "Matplotlib & Seaborn", level: 85 },
-            { name: "XGBoost", level: 85 },
-            { name: "NLTK & SpaCy", level: 85 },
-            { name: "Exploratory Data Analysis", level: 90 }
+            { name: "SciPy & Plotly", level: 85 }
         ]
     },
     {
-        category: "Deep Learning & GenAI",
+        category: "Machine Learning",
         icon: Brain,
         skills: [
-            { name: "PyTorch & TensorFlow", level: 90 },
-            { name: "Hugging Face Transformers", level: 90 },
-            { name: "RAG & LLM Inference", level: 90 },
-            { name: "RLHF & Fine-tuning", level: 85 },
-            { name: "Ray Tune", level: 80 }
+            { name: "XGBoost & Random Forest", level: 90 },
+            { name: "Clustering (K-Means, DBSCAN)", level: 85 },
+            { name: "Recommendation Systems", level: 90 },
+            { name: "Hyperparameter Tuning", level: 90 },
+            { name: "Model Evaluation", level: 90 },
+            { name: "ETL & Feature Engineering", level: 85 }
         ]
     },
     {
-        category: "Cloud & MLOps",
+        category: "GenAI & NLP",
+        icon: Brain,
+        skills: [
+            { name: "PyTorch & Transformers", level: 90 },
+            { name: "Multimodal RAG", level: 95 },
+            { name: "PEFT (LoRA/QLoRA)", level: 90 },
+            { name: "spaCy & NLTK", level: 85 },
+            { name: "Vector Search (FAISS, Pinecone)", level: 90 }
+        ]
+    },
+    {
+        category: "Systems & MLOps",
         icon: Cloud,
         skills: [
-            { name: "AWS", level: 85 },
+            { name: "AWS Bedrock & SageMaker", level: 90 },
             { name: "Docker & Kubernetes", level: 85 },
-            { name: "MLflow & Optuna", level: 85 },
+            { name: "MLflow", level: 85 },
+            { name: "FastAPI & Node.js", level: 90 },
             { name: "CI/CD Pipelines", level: 80 }
-        ]
-    },
-    {
-        category: "Frameworks & Tools",
-        icon: Layers,
-        skills: [
-            { name: "React/Next.js", level: 85 },
-            { name: "FastAPI & Spring Boot", level: 85 },
-            { name: "FAISS & Weaviate", level: 85 },
-            { name: "Git", level: 90 },
-            { name: "MongoDB & PostgreSQL", level: 80 }
         ]
     }
 ];

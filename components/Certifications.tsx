@@ -5,13 +5,12 @@ import { motion } from "framer-motion";
 import { Award } from "lucide-react";
 
 const certifications = [
+    "AWS Certified Generative AI Developer – Professional",
+    "AWS Certified AI Practitioner",
     "Salesforce Certified AI Associate",
-    "Salesforce Sharing and Visibility Architect",
-    "Salesforce Platform App Builder",
-    "Salesforce Administrator",
-    "Salesforce Platform Developer 1",
-    "AI and Machine Learning Internship - National Instruments & Cognibot",
-    "SPOT Award - Deloitte (Outstanding Contributions)"
+    "5x Salesforce Certified (Platform Developer, App Builder, etc.)",
+    "Deloitte SPOT Award (Outstanding Contributions)",
+    "AI and Machine Learning Internship - National Instruments & Cognibot"
 ];
 
 export default function Certifications() {

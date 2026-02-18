@@ -7,6 +7,18 @@ import Link from "next/link";
 
 const projects = [
     {
+        title: "Adaptive LLM Evaluation & Self-Optimizing Agents",
+        technologies: ["LangGraph", "DSPy", "vLLM", "TruLens", "Guardrails AI", "FastAPI", "Prometheus", "Docker", "AWS"],
+        description: [
+            "Built an adaptive LLM orchestration framework using LangGraph and DSPy to dynamically route queries across multiple foundation models, improving response quality consistency by 27%.",
+            "Implemented self-refinement pipelines with TruLens for hallucination detection and automated response scoring, reducing factual error rates by 32% while preserving end-to-end latency.",
+            "Established LLMOps pipelines with vLLM and async FastAPI, integrating Prometheus/Grafana for token and latency monitoring, reducing inference costs by 24%."
+        ],
+        icon: Brain,
+        demoLink: "#",
+        githubLink: "#"
+    },
+    {
         title: "Financial Portfolio Automation using RAG & LLMs",
         technologies: ["Python", "PyTorch", "LangChain", "FAISS", "LoRA", "FastAPI", "Docker", "AWS", "React.js"],
         description: [

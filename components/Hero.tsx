@@ -68,11 +68,11 @@ export default function Hero() {
                     <p className="text-muted-foreground text-lg mb-8 max-w-2xl leading-relaxed">
                         Master&apos;s student in Computer Science at UIC specializing in Machine Learning, NLP, and Inference Optimizations.
                         Passionate about building scalable RAG pipelines, GenAI applications, and LLM workflows.
-                        Former Software Developer at Deloitte with 2+ years of experience delivering enterprise solutions.
+                        Former Software Engineer at Deloitte with 3.5+ years of experience delivering enterprise solutions.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <a href="/Resume_Nikhil_ML_Engineer.pdf" download>
+                        <a href="/Resume_Nikhil_Juluri.pdf" download>
                             <Button variant="primary" size="lg">
                                 <Download className="mr-2 h-5 w-5" />
                                 Download Resume

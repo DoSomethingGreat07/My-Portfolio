@@ -45,37 +45,24 @@ export default function About() {
 
                         <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                             <p>
-                                I&apos;m <span className="text-white font-medium">Nikhil Juluri</span>, an AI/ML Engineer currently pursuing my Master&apos;s in Computer Science at the
-                                University of Illinois Chicago (GPA: 3.8). with a strong foundation in Electronics and Communication from CBIT, Hyderabad.
-                                I&apos;ve spent over 2 years as a Software Engineer at Deloitte, building scalable AI systems and optimized financial workflows.
+                                Hi, I&apos;m <span className="text-white font-medium">Nikhil Juluri</span>, an AI and Machine Learning Engineer currently pursuing my Master&apos;s in Computer Science at the University of Illinois Chicago, where I maintain a GPA of 3.8. I completed my undergraduate studies in Electronics and Communication Engineering at CBIT in Hyderabad, which gave me a strong foundation in systems thinking and problem solving. Before returning to academia, I spent over three and a half years at Deloitte as a Software Engineer, working on production-grade platforms in the financial domain and building cloud-based systems that supported real business operations.
                             </p>
 
                             <p>
-                                My passion lies in building intelligent systems that can understand and process information at scale.
-                                As a Graduate Research Assistant at UIC, I&apos;m focused on developing
-                                <span className="text-white font-medium"> RAG pipelines</span> and
-                                <span className="text-white font-medium"> LLM inference workflows</span> using PyTorch and Hugging Face Transformers.
+                                During my time at Deloitte, I worked across backend engineering, cloud infrastructure, and applied machine learning. I helped develop scalable microservices, APIs, and data-driven applications, and contributed to AI-powered workflows that combined natural language processing with recommendation systems. Alongside this, I gained strong enterprise experience integrating Salesforce platforms and delivering secure, reliable solutions for clients. These experiences shaped my interest in building intelligent systems that move beyond prototypes and operate reliably in real-world environments.
                             </p>
 
-                            <div className="pl-4 border-l-2 border-primary/50 my-6">
-                                <p className="text-white font-medium mb-2">I specialize in:</p>
-                                <ul className="list-disc list-inside space-y-1 text-sm">
-                                    <li>Large Language Models (LLMs) & RAG</li>
-                                    <li>Deep Learning & Natural Language Processing (NLP)</li>
-                                    <li>Data Engineering & Scalable ML Pipelines</li>
-                                    <li>MLOps & Infrastructure (AWS, Docker, Kubernetes)</li>
-                                </ul>
-                            </div>
+                            <p>
+                                I now focus my work on <span className="text-white font-medium">Generative AI</span> and <span className="text-white font-medium">large language models</span> as a Graduate Research Assistant at UIC. My research centers on retrieval-augmented generation pipelines and efficient LLM inference using PyTorch and Hugging Face Transformers. I spend much of my time experimenting with model fine-tuning, optimizing inference performance, and building reproducible pipelines that take models from experimentation to deployment. I enjoy working at the intersection of research and engineering, where ideas turn into usable systems.
+                            </p>
 
                             <p>
-                                I&apos;m experienced in fine-tuning models (LoRA/QLoRA), optimizing inference with vLLM, and managing end-to-end ML lifecycles
-                                with MLflow and Ray Tune. I&apos;m driven by the challenge of translating complex research into production-ready solutions that
-                                deliver real-world value.
+                                I specialize in <span className="text-white font-medium">multimodal retrieval systems</span> and <span className="text-white font-medium">agent-based workflows</span>, large language model inference optimization, parameter-efficient fine-tuning with LoRA and QLoRA, and building end-to-end MLOps pipelines using AWS, Docker, and Kubernetes. I am driven by the challenge of translating complex research into production-ready solutions, and I enjoy creating scalable AI systems that deliver meaningful impact through thoughtful design, careful evaluation, and continuous learning.
                             </p>
                         </div>
 
                         <div className="mt-8">
-                            <a href="/Resume_Nikhil_ML_Engineer.pdf" download>
+                            <a href="/Resume_Nikhil_Juluri.pdf" download>
                                 <Button variant="secondary">
                                     <Download className="mr-2 h-4 w-4" />
                                     Download Resume

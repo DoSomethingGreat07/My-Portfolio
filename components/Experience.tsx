@@ -11,35 +11,30 @@ const experience = [
         period: "June 2025 – Present",
         location: "Chicago, IL",
         description: [
-            "LLM & RAG Development: Working on building RAG pipelines and LLM inference workflows using PyTorch and Hugging Face Transformers - mostly experimented with LLaMA and DistilBERT models. Set up vector databases like FAISS and Weaviate to handle the retrieval part. Tried out supervised fine-tuning and some RLHF-based alignment techniques on domain-specific datasets to make the inference faster and more memory-efficient. Spent a lot of time with Ray Tune doing hyperparameter tuning, playing around with learning rates, batch sizes, and attention parameters until we got better performance.",
-            "Data Processing & EDA: Put together scalable AI/ML pipelines that covered the whole process - data ingestion, ETL, exploratory analysis, and feature engineering. Used Pandas, NumPy, and scikit-learn pretty heavily for all of this. Made sure we had good data quality throughout and kept everything version-controlled so the experiments could be reproduced easily. This was really important for making our ML work research-ready.",
-            "Deployment & MLOps: Got hands-on experience packaging and deploying models with Docker and Kubernetes on AWS. Set up basic monitoring and logging for our experimental inference workflows so we could see how things were running in real-time. This made it a lot easier to catch issues early and iterate quickly during development."
+            "Designed multimodal RAG systems combining transformer-based LLaMA models with Vision Transformers for text-image reasoning, integrating FAISS similarity indexing and Weaviate to retrieve structured and unstructured data, improving contextual response quality by 30% across domain-specific research benchmarks.",
+            "Enhanced model efficiency through LoRA fine-tuning and alignment strategies while optimizing inference via mixed precision, KV-caching, dynamic batching, parallelism, flashAttention and controlled decoding; leveraged Optuna for hyperparameter tuning, balancing latency, throughput, and relevance.",
+            "Deployed GPU-accelerated LLM pipelines on AWS using Docker and Kubernetes, implementing CUDA-based optimizations, memory management, token-level monitoring, and retrieval latency tracking to support scalable experimentation and real-time performance visibility."
         ]
     },
     {
-        role: "Software Engineer | ML & LLM Inference, GenAI Systems",
+        role: "Software Engineer — Machine Learning Engineer",
         company: "Deloitte",
         period: "Sep 2022 - Jul 2024",
         location: "Hyderabad, India",
         description: [
-            "Built AI-powered financial account systems using RAG pipelines, LLM inference, vector databases, LangChain, and LangGraph, deploying FastAPI microservices with Docker and Kubernetes on AWS (Lambda, EC2, S3) for real-time queries across millions of accounts.",
-            "Optimized payment workflows with Node.js, TypeScript, and Apex, reducing processing time by 60%, helping a client with a $50,000 Flex Account achieve $10,000 turnover growth.",
-            "Fine-tuned transformer models using LoRA/QLoRA with MLflow experiment tracking and Optuna hyperparameter optimization, cutting inference latency by 25%. Integrated vLLM for high-throughput serving with optimized GPU utilization, quantization, and KV caching.",
-            "Built RESTful and GraphQL APIs via AWS API Gateway and FastAPI Lambda that improved data accuracy by 40% and reduced support tickets by 30%, helping families track 529 plans and reach $20,000 annual savings goals.",
-            "Led data migrations using SOQL, Data Loader, and ETL pipelines with PyTorch, NumPy, Pandas, and scikit-learn for ML validation, achieving 98% accuracy while reducing manual work by 30% and migrating $5M in legacy plans.",
-            "Established MLOps with MLflow for model lifecycle management and built CI/CD pipelines for automated deployment and monitoring with FastAPI. Implemented continuous retraining, logging, and rollback systems maintaining 99.9% uptime."
+            "Built enterprise GenAI assistants using RAG over financial statements and external market APIs, integrating LangChain with vector databases to automate advisor workflows, reducing manual analysis time by 40%. Implemented response evaluation using answer relevance, groundedness, and hallucination checks.",
+            "Enhanced personalization by adapting transformer-based foundation models via LoRA/QLoRA and supervised fine-tuning, applying few-shot, role prompting, and controlled decoding (temperature, top-k/top-p). Improved recommendation relevance by 25% while monitoring token usage and optimizing inference costs.",
+            "Deployed scalable GenAI services on AWS Bedrock and SageMaker with provisioned throughput models, orchestrated via FastAPI and Lambda. Integrated structured RAG pipelines with database and API sources, implementing cost monitoring and latency tracking dashboards to maintain 99.9% uptime."
         ]
     },
     {
-        role: "Software Engineer Intern | AI/ML & LLM Systems",
+        role: "Software Engineer Intern — Machine Learning Engineer",
         company: "Deloitte",
-        period: "Jun 2022 - Aug 2022",
+        period: "May 2022 - Aug 2022",
         location: "Hyderabad, India",
         description: [
-            "Conducted exploratory data analysis on financial datasets using Pandas, NumPy, and Matplotlib to uncover portfolio trends and anomalies. Built Python ML pipelines with PyTorch and scikit-learn for predictive analytics and recommendation tasks.",
-            "Developed proof-of-concept LLM prototypes using DistilBERT and LLaMA for small-scale RAG retrieval pipelines that provided AI-powered insights into account workflows.",
-            "Created React.js and LWC dashboards to visualize ML insights and portfolio recommendations for end users. Integrated RESTful APIs with AWS Lambda and API Gateway to connect ML pipelines with dashboards.",
-            "Implemented ETL pipelines to clean, preprocess, and transform financial datasets, achieving around 95% data accuracy. Packaged experiments in Docker containers for reproducibility and shared cloud deployment across the team."
+            "Built credit risk ML pipelines using ETL, feature engineering, and XGBoost/Random Forest with 5-fold CV (AUC 0.86), improving loan approval accuracy by 18%; extended to hybrid investment recommendations with collaborative filtering and content-based models, increasing CTR by 15%.",
+            "Completed the platform with fraud detection using Isolation Forest and Gradient Boosting (ROC-AUC, recall), reducing false positives by 25%; automated pipelines with scikit-learn and Docker, deploying FastAPI REST services on AWS Lambda for real-time transaction monitoring."
         ]
     }
 ];
