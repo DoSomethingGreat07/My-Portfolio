@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Github, ExternalLink, Server, Database, Brain, Cloud } from "lucide-react";
+import { Github, ExternalLink, Server, Database, Brain, Cloud, Layers, Terminal } from "lucide-react";
 import Link from "next/link";
 
 const projects = [
