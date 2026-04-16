@@ -7,52 +7,62 @@ import Link from "next/link";
 
 const projects = [
     {
-        title: "Adaptive LLM Evaluation & Self-Optimizing Agents",
-        technologies: ["LangGraph", "DSPy", "vLLM", "TruLens", "Guardrails AI", "FastAPI", "Prometheus", "Docker", "AWS"],
+        title: "TrustLayer – Trust-Aware RAG Research Assistant",
+        technologies: ["Python", "Streamlit", "LangChain", "ChromaDB", "BM25", "Sentence Transformers", "OpenAI API"],
         description: [
-            "Built an adaptive LLM orchestration framework using LangGraph and DSPy to dynamically route queries across multiple foundation models, improving response quality consistency by 27%.",
-            "Implemented self-refinement pipelines with TruLens for hallucination detection and automated response scoring, reducing factual error rates by 32% while preserving end-to-end latency.",
-            "Established LLMOps pipelines with vLLM and async FastAPI, integrating Prometheus/Grafana for token and latency monitoring, reducing inference costs by 24%."
+            "Built a trust-aware research assistant for local research-paper corpora by engineering an end-to-end RAG pipeline that indexes 5,000+ evidence chunks with Chroma vector search.",
+            "Improved answer reliability by implementing hybrid and corrective retrieval, combining dense embeddings with BM25 sparse search and cross-encoder reranking.",
+            "Increased transparency and reduced unsupported responses by 40% through verification-based abstention and an interactive dashboard for evidence visualization."
         ],
         icon: Brain,
         demoLink: "#",
         githubLink: "#"
     },
     {
-        title: "Financial Portfolio Automation using RAG & LLMs",
-        technologies: ["Python", "PyTorch", "LangChain", "FAISS", "LoRA", "FastAPI", "Docker", "AWS", "React.js"],
+        title: "BugOrbit – Graph-Powered Incident Intelligence",
+        technologies: ["React", "TypeScript", "FastAPI", "Neo4j", "RocketRide", "Observability"],
         description: [
-            "Developed an AI-powered system to streamline financial account management and portfolio rebalancing for clients, integrating LLMs and RAG pipelines for context-aware recommendations.",
-            "Implemented a Retrieval-Augmented Generation pipeline using LangChain with FAISS vector database to retrieve financial statements and ETF/mutual fund data.",
-            "Integrated LoRA adapters on DistilBERT for specialized financial text understanding, achieving 95% accuracy in extracting actionable insights.",
-            "Deployed APIs using FastAPI and Docker for inference and connected real-time front-end dashboards built with React.js, reducing processing time by 60%."
-        ],
-        icon: Brain,
-        demoLink: "#",
-        githubLink: "#"
-    },
-    {
-        title: "Large Language Model Fine-Tuning & Inference",
-        technologies: ["PyTorch", "Hugging Face", "LoRA", "vLLM", "FastAPI", "Docker", "Kubernetes", "AWS EC2/EKS"],
-        description: [
-            "Fine-tuned an open-source LLaMA-8B quantized model on domain-specific financial datasets to generate high-quality financial insights.",
-            "Conducted hyperparameter tuning with learning rate scheduling and batch size optimization, along with RLHF-inspired reward modeling.",
-            "Deployed inference using vLLM on AWS EC2 GPU cluster, integrated with FastAPI, Docker, and Kubernetes, enabling sub-200ms token latency."
+            "Designed and built a graph-powered incident intelligence platform that transforms raw production telemetry into structured incidents and root-cause analysis.",
+            "Engineered a FastAPI and Neo4j pipeline to normalize noisy observability payloads and persist service dependencies as a live graph with <200 ms ingestion latency.",
+            "Developed an interactive React dashboard for live incident monitoring and dependency-graph exploration, reducing mean investigation time by 30%."
         ],
         icon: Server,
         demoLink: "#",
         githubLink: "#"
     },
     {
-        title: "End-to-End MLOps Pipeline for Financial AI",
-        technologies: ["PyTorch", "Kubeflow", "Airflow", "MLflow", "vLLM", "Triton", "Docker", "Kubernetes", "AWS"],
+        title: "GraphRAG for Multi-Hop Question Answering",
+        technologies: ["Python", "PyTorch Geometric", "Sentence Transformers", "Streamlit", "OpenAI API"],
         description: [
-            "Built a full MLOps and LLMOps infrastructure to streamline training, deployment, monitoring, and versioning of ML and LLM models.",
-            "Developed a reproducible pipeline using Kubeflow and Airflow for data ingestion, preprocessing, training, and model versioning.",
-            "Integrated MLflow for experiment tracking and automated deployment to Kubernetes clusters with Docker containers.",
-            "Orchestrated high-performance LLM inference with vLLM and Triton, achieving 30% cost reduction."
+            "Built an end-to-end GraphRAG system for multi-hop QA, indexing 10,000 examples into 263,113 text chunks with dense retrieval and hybrid graph construction.",
+            "Designed a hybrid graph-retrieval pipeline with query-aware GraphSAGE and PCST-based evidence selection to improve multi-document reasoning.",
+            "Achieved significant performance gains over dense baselines, outperforming in downstream answer quality across evaluation sets."
+        ],
+        icon: Layers,
+        demoLink: "#",
+        githubLink: "#"
+    },
+    {
+        title: "PulseGrid – Real-Time Disaster Response Optimization",
+        technologies: ["Neo4j", "Python", "FastAPI", "WebSockets", "Graph Algorithms", "Maps API"],
+        description: [
+            "Designed a real-time graph-based decision-making system on Neo4j for resource dispatch and routing during disasters, facilitating sub-100ms updates.",
+            "Implemented multi-step routing using Priority Queues, Dijkstra’s, Yen’s K-shortest path, and Gale-Shapley algorithms for optimal responder matching.",
+            "Decreased responder deployment time by 45-50% while providing real-time route animations and ETA tracking via sub-1 second instructions."
         ],
         icon: Cloud,
+        demoLink: "#",
+        githubLink: "#"
+    },
+    {
+        title: "High-Performance LLM Inference Framework",
+        technologies: ["Python", "PyTorch", "vLLM", "CUDA", "Performance Tuning"],
+        description: [
+            "Built a high-performance LLM inference framework improving token generation throughput by 30-45% and reducing latency by 25% through optimized dynamic batching.",
+            "Designed benchmarking pipelines to analyze latency distribution (p50/p95), throughput, and GPU memory utilization across multiple model configurations.",
+            "Enabled systematic performance tuning and identification of inference bottlenecks under concurrent workloads using vLLM and CUDA."
+        ],
+        icon: Terminal,
         demoLink: "#",
         githubLink: "#"
     }

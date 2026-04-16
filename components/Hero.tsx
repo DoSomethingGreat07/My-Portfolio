@@ -66,9 +66,9 @@ export default function Hero() {
                     </div>
 
                     <p className="text-muted-foreground text-lg mb-8 max-w-2xl leading-relaxed">
-                        Master&apos;s student in Computer Science at UIC specializing in Machine Learning, NLP, and Inference Optimizations.
-                        Passionate about building scalable RAG pipelines, GenAI applications, and LLM workflows.
-                        Former Software Engineer at Deloitte with 3.5+ years of experience delivering enterprise solutions.
+                        Master&apos;s student in Computer Science at UIC specializing in AI, Machine Learning, and High-Performance Inference.
+                        Passionate about building scalable GraphRAG pipelines and optimizing LLM workflows.
+                        Professional experience at Deloitte and SodexoMagic delivering enterprise-scale AI and data solutions.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">

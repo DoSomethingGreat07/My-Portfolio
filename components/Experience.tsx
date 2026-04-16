@@ -7,34 +7,46 @@ import { Calendar, MapPin } from "lucide-react";
 const experience = [
     {
         role: "Graduate Research Assistant",
-        company: "University of Illinois at Chicago",
+        company: "University of Illinois Chicago",
         period: "June 2025 – Present",
         location: "Chicago, IL",
         description: [
-            "Designed multimodal RAG systems combining transformer-based LLaMA models with Vision Transformers for text-image reasoning, integrating FAISS similarity indexing and Weaviate to retrieve structured and unstructured data, improving contextual response quality by 30% across domain-specific research benchmarks.",
-            "Enhanced model efficiency through LoRA fine-tuning and alignment strategies while optimizing inference via mixed precision, KV-caching, dynamic batching, parallelism, flashAttention and controlled decoding; leveraged Optuna for hyperparameter tuning, balancing latency, throughput, and relevance.",
-            "Deployed GPU-accelerated LLM pipelines on AWS using Docker and Kubernetes, implementing CUDA-based optimizations, memory management, token-level monitoring, and retrieval latency tracking to support scalable experimentation and real-time performance visibility."
+            "Developed memory-efficient Python pipelines using PyArrow and multiprocessing for ingesting multi-gigabyte transaction-style and financial telemetry flat files; achieved a memory reduction of 35% and an ingestion throughput increase of 40%.",
+            "Developed private LLM workflows with GPT and Llama models for code translation and audit-style validation; achieved an accuracy increase of 87% for anomaly detection and a 2x reduction in debugging times.",
+            "Implemented MLOps pipelines with MLflow for deployment on AWS SageMaker and Google Vertex AI for traceable and compliant model deployments; achieved a 30% reduction in release turnaround times."
         ]
     },
     {
-        role: "Software Engineer — Machine Learning Engineer",
-        company: "Deloitte",
-        period: "Sep 2022 - Jul 2024",
-        location: "Hyderabad, India",
+        role: "Data Analyst",
+        company: "SodexoMagic",
+        period: "Sep 2024 – May 2026",
+        location: "Chicago, IL",
         description: [
-            "Built enterprise GenAI assistants using RAG over financial statements and external market APIs, integrating LangChain with vector databases to automate advisor workflows, reducing manual analysis time by 40%. Implemented response evaluation using answer relevance, groundedness, and hallucination checks.",
-            "Enhanced personalization by adapting transformer-based foundation models via LoRA/QLoRA and supervised fine-tuning, applying few-shot, role prompting, and controlled decoding (temperature, top-k/top-p). Improved recommendation relevance by 25% while monitoring token usage and optimizing inference costs.",
-            "Deployed scalable GenAI services on AWS Bedrock and SageMaker with provisioned throughput models, orchestrated via FastAPI and Lambda. Integrated structured RAG pipelines with database and API sources, implementing cost monitoring and latency tracking dashboards to maintain 99.9% uptime."
+            "Created interactive dashboards in Power BI and Tableau linked to SQL databases for operational KPIs, resulting in a 40% reduction in reporting time and faster decision-making processes.",
+            "Executed data preprocessing operations on structured SQL and NoSQL (JSON) data sources using Python and Pandas, transforming unstructured data into structured datasets for repeated analysis.",
+            "Automated data processing operations through Python programming and SQL job scheduling, saving about 3–4 hours weekly from manual reporting efforts."
         ]
     },
     {
-        role: "Software Engineer Intern — Machine Learning Engineer",
+        role: "Software Engineer II — Machine Learning Engineer",
         company: "Deloitte",
-        period: "May 2022 - Aug 2022",
+        period: "Sep 2022 – Jul 2024",
         location: "Hyderabad, India",
         description: [
-            "Built credit risk ML pipelines using ETL, feature engineering, and XGBoost/Random Forest with 5-fold CV (AUC 0.86), improving loan approval accuracy by 18%; extended to hybrid investment recommendations with collaborative filtering and content-based models, increasing CTR by 15%.",
-            "Completed the platform with fraud detection using Isolation Forest and Gradient Boosting (ROC-AUC, recall), reducing false positives by 25%; automated pipelines with scikit-learn and Docker, deploying FastAPI REST services on AWS Lambda for real-time transaction monitoring."
+            "Built enterprise GenAI advisory assistants using RAG over financial statements and market APIs with LangChain and vector databases, reducing manual analysis time by 40% while ensuring factual accuracy (0.91 groundedness).",
+            "Improved relevance of investment product recommendations and portfolio suggestions by 25% through LoRA/QLoRA fine-tuning and context-aware prompt engineering, while optimizing token utilization and inference cost.",
+            "Deployed scalable GenAI services on AWS Bedrock and SageMaker with provisioned throughput models, orchestrated through FastAPI microservices and integrated with Lambda, S3, and EC2 to maintain 99.9% system uptime."
+        ]
+    },
+    {
+        role: "Software Engineer I — Machine Learning Engineer",
+        company: "Deloitte",
+        period: "May 2022 – Aug 2022",
+        location: "Hyderabad, India",
+        description: [
+            "Built credit risk prediction pipelines using ETL, feature engineering, and XGBoost with 5-fold cross-validation (AUC 0.86), improving loan approval accuracy by 18%.",
+            "Developed hybrid investment recommendation systems using collaborative filtering and XGBoost ranking, increasing CTR by 15% through precision-optimized ranking.",
+            "Built a fraud detection pipeline using Isolation Forest and Gradient Boosting, reducing false positives by 25%, and deployed Dockerized FastAPI APIs on AWS Lambda for real-time monitoring."
         ]
     }
 ];

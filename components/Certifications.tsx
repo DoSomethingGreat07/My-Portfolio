@@ -7,10 +7,8 @@ import { Award } from "lucide-react";
 const certifications = [
     "AWS Certified Generative AI Developer – Professional",
     "AWS Certified AI Practitioner",
-    "Salesforce Certified AI Associate",
-    "5x Salesforce Certified (Platform Developer, App Builder, etc.)",
-    "Deloitte SPOT Award (Outstanding Contributions)",
-    "AI and Machine Learning Internship - National Instruments & Cognibot"
+    "5x Salesforce Certified",
+    "Deloitte SPOT Award (for Outstanding Contributions)"
 ];
 
 export default function Certifications() {

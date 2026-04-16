@@ -10,11 +10,11 @@ const skillsData = [
         category: "Programming & Data",
         icon: Code,
         skills: [
-            { name: "Python", level: 95 },
+            { name: "Python (PyArrow, Pandas)", level: 95 },
             { name: "TypeScript/JavaScript", level: 90 },
-            { name: "Java", level: 85 },
-            { name: "SQL", level: 90 },
-            { name: "NumPy & Pandas", level: 95 },
+            { name: "Java & C++", level: 85 },
+            { name: "SQL & NoSQL (JSON)", level: 90 },
+            { name: "Power BI & Tableau", level: 85 },
             { name: "SciPy & Plotly", level: 85 }
         ]
     },
@@ -23,11 +23,11 @@ const skillsData = [
         icon: Brain,
         skills: [
             { name: "XGBoost & Random Forest", level: 90 },
-            { name: "Clustering (K-Means, DBSCAN)", level: 85 },
+            { name: "GNNs (PyTorch Geometric)", level: 90 },
             { name: "Recommendation Systems", level: 90 },
             { name: "Hyperparameter Tuning", level: 90 },
-            { name: "Model Evaluation", level: 90 },
-            { name: "ETL & Feature Engineering", level: 85 }
+            { name: "ETL & Feature Engineering", level: 85 },
+            { name: "Graph Algorithms (Neo4j)", level: 90 }
         ]
     },
     {
@@ -35,21 +35,21 @@ const skillsData = [
         icon: Brain,
         skills: [
             { name: "PyTorch & Transformers", level: 90 },
-            { name: "Multimodal RAG", level: 95 },
-            { name: "PEFT (LoRA/QLoRA)", level: 90 },
-            { name: "spaCy & NLTK", level: 85 },
-            { name: "Vector Search (FAISS, Pinecone)", level: 90 }
+            { name: "RAG & GraphRAG", level: 95 },
+            { name: "LoRA/QLoRA & Prompt Eng.", level: 90 },
+            { name: "vLLM & CUDA Optimization", level: 85 },
+            { name: "Vector Search (FAISS, Chroma)", level: 90 }
         ]
     },
     {
         category: "Systems & MLOps",
         icon: Cloud,
         skills: [
-            { name: "AWS Bedrock & SageMaker", level: 90 },
+            { name: "AWS (SageMaker, Bedrock)", level: 90 },
             { name: "Docker & Kubernetes", level: 85 },
             { name: "MLflow", level: 85 },
-            { name: "FastAPI & Node.js", level: 90 },
-            { name: "CI/CD Pipelines", level: 80 }
+            { name: "FastAPI & WebSockets", level: 90 },
+            { name: "CI/CD & Monitoring (p50/p95)", level: 80 }
         ]
     }
 ];

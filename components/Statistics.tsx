@@ -9,28 +9,28 @@ export default async function Statistics() {
     const stats = [
         {
             label: "Years Experience",
-            value: 3.5,
+            value: 4,
             suffix: "+",
             icon: Calendar,
-            description: "Building Enterprise Solutions"
+            description: "Enterprise & Research Roles"
         },
         {
             label: "Projects Completed",
-            value: 25,
+            value: 30,
             suffix: "+",
             icon: Layers,
-            description: "Open Source & Professional"
+            description: "Open Source & Industry"
         },
         {
             label: "Lines of Code",
-            value: 1500, // Static as per request/hard to calculate exactly via simple API
-            suffix: "K+", // 1.5K+
+            value: 2,
+            suffix: "K+",
             icon: Code,
             description: "Across all repositories"
         },
         {
             label: "Technologies Mastered",
-            value: 50,
+            value: 60,
             suffix: "+",
             icon: Terminal,
             description: "Full Stack & AI/ML Stack"
