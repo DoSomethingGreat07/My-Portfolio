@@ -3,7 +3,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Github, ExternalLink, Server, Database, Brain, Cloud, Layers, Terminal } from "lucide-react";
-import Link from "next/link";
 
 const projects = [
     {
@@ -122,20 +121,24 @@ export default function Projects() {
                                     </ul>
 
                                     <div className="flex flex-wrap gap-4">
-                                        <Link
+                                        <a
                                             href={project.demoLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
                                         >
                                             <ExternalLink size={18} />
                                             View Demo
-                                        </Link>
-                                        <Link
+                                        </a>
+                                        <a
                                             href={project.githubLink}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                             className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-secondary text-foreground font-medium hover:bg-secondary/80 transition-colors"
                                         >
                                             <Github size={18} />
                                             GitHub View
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
