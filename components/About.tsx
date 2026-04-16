@@ -49,7 +49,7 @@ export default function About() {
                             </p>
 
                             <p>
-                                Currently, as a Graduate Research Assistant at UIC, I develop memory-efficient Python pipelines and private LLM workflows for code translation and audit validation. I recently worked as a Data Analyst at <span className="text-white font-medium">SodexoMagic</span>, where I optimized operational reporting by 40% using SQL, Python, and interactive dashboards. My experience spans the entire lifecycle of AI—from data preprocessing and feature engineering to fine-tuning LLMs and deploying scalable MLOps pipelines.
+                                Currently, as a Graduate Research Assistant at UIC, I develop memory-efficient Python pipelines using <span className="text-white font-medium">PyArrow</span> and multiprocessing, achieving a <span className="text-white font-medium">35% memory reduction</span> in large-scale data workflows. I recently worked as a Data Analyst at <span className="text-white font-medium">SodexoMagic</span>, where I optimized operational reporting by 40% and implemented private LLM workflows for audit-style validation with <span className="text-white font-medium">87% accuracy</span> detections.
                             </p>
 
                             <p>

@@ -15,8 +15,8 @@ const projects = [
             "Increased transparency and reduced unsupported responses by 40% through verification-based abstention and an interactive dashboard for evidence visualization."
         ],
         icon: Brain,
-        demoLink: "#",
-        githubLink: "#"
+        demoLink: "https://trustlayer.netlify.app/",
+        githubLink: "https://github.com/DoSomethingGreat07/TrustLayer"
     },
     {
         title: "BugOrbit – Graph-Powered Incident Intelligence",
@@ -27,8 +27,8 @@ const projects = [
             "Developed an interactive React dashboard for live incident monitoring and dependency-graph exploration, reducing mean investigation time by 30%."
         ],
         icon: Server,
-        demoLink: "#",
-        githubLink: "#"
+        demoLink: "https://bugorbit.netlify.app/",
+        githubLink: "https://github.com/DoSomethingGreat07/BugOrbit"
     },
     {
         title: "GraphRAG for Multi-Hop Question Answering",
@@ -39,11 +39,11 @@ const projects = [
             "Achieved significant performance gains over dense baselines, outperforming in downstream answer quality across evaluation sets."
         ],
         icon: Layers,
-        demoLink: "#",
-        githubLink: "#"
+        demoLink: "https://graph-rag.netlify.app/",
+        githubLink: "https://github.com/DoSomethingGreat07/GraphRAG"
     },
     {
-        title: "PulseGrid – Real-Time Disaster Response Optimization",
+        title: "PulseGrid (Kairos) – Real-Time Disaster Response Optimization",
         technologies: ["Neo4j", "Python", "FastAPI", "WebSockets", "Graph Algorithms", "Maps API"],
         description: [
             "Designed a real-time graph-based decision-making system on Neo4j for resource dispatch and routing during disasters, facilitating sub-100ms updates.",
@@ -51,8 +51,8 @@ const projects = [
             "Decreased responder deployment time by 45-50% while providing real-time route animations and ETA tracking via sub-1 second instructions."
         ],
         icon: Cloud,
-        demoLink: "#",
-        githubLink: "#"
+        demoLink: "https://pulsegrid.netlify.app/",
+        githubLink: "https://github.com/DoSomethingGreat07/Kairos"
     },
     {
         title: "High-Performance LLM Inference Framework",
@@ -64,7 +64,7 @@ const projects = [
         ],
         icon: Terminal,
         demoLink: "#",
-        githubLink: "#"
+        githubLink: "https://github.com/DoSomethingGreat07/My-Portfolio"
     }
 ];
 
