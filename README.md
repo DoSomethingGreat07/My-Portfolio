@@ -4,7 +4,31 @@ Welcome to my personal portfolio website! This project showcases my skills, expe
 
 ## 🚀 Live Demo
 
-[Link to your live demo if available, e.g., Vercel deployment]
+[GitHub Pages Deployment Guide Below]
+
+## 🐙 Deploying to GitHub Pages
+
+1. Build the static site:
+    ```bash
+    npm run build
+    npm run export
+    ```
+    This will output static files to the `out/` directory.
+
+2. Push the contents of `out/` to the `gh-pages` branch of your repository:
+    ```bash
+    git add .
+    git commit -m "Build for GitHub Pages"
+    git push origin main
+    npx gh-pages -d out
+    ```
+    Or manually copy the contents of `out/` to your `gh-pages` branch.
+
+3. In your repository settings, set GitHub Pages to serve from the `/ (root)` or `/docs` folder of the `gh-pages` branch.
+
+4. If your repo is not at the root (e.g. username.github.io/repo), set `assetPrefix` and `basePath` in `next.config.ts` as shown in comments.
+
+5. Your site will be live at `https://<username>.github.io/<repo>/`.
 
 ## ✨ Features
 

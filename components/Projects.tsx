@@ -6,6 +6,20 @@ import { Github, ExternalLink, Server, Database, Brain, Cloud, Layers, Terminal 
 
 const projects = [
     {
+        title: "Lazarus – Clinical AI Platform for Drug Repurposing",
+        technologies: [
+            "FastAPI", "React", "PostgreSQL", "Neo4j", "Redis", "WebSockets", "OpenAI", "Gemini", "PubMed", "openFDA"
+        ],
+        description: [
+            "Architected a full-stack clinical AI platform that transforms failed drug assets into ranked repurposing hypotheses using a FastAPI + React/Vite control plane, PostgreSQL operational ledger, and Neo4j biomedical knowledge graph.",
+            "Built a typed 9-agent LLM orchestration DAG with 14 persisted reasoning steps per run, generating auditable outputs across hypothesis generation, skeptical review, evidence curation, trial strategy, effort estimation, and impact scoring.",
+            "Engineered real-time WebSocket streaming with polling fallback, enabling operators to monitor live agent traces, confidence scores, human-review escalations, portfolio rankings, and executive-ready PDF blueprint generation."
+        ],
+        icon: Brain,
+        demoLink: "#",
+        githubLink: "https://github.com/farhanmir/lazarus"
+    },
+    {
         title: "TrustLayer – Trust-Aware RAG Research Assistant",
         technologies: ["Python", "Streamlit", "LangChain", "ChromaDB", "BM25", "Sentence Transformers", "OpenAI API"],
         description: [

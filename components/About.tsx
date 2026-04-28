@@ -62,7 +62,7 @@ export default function About() {
                         </div>
 
                         <div className="mt-8">
-                            <a href="/Resume_Nikhil_Juluri.pdf" download>
+                            <a href="/Resume_Nikhil_Juluri_______.pdf" download>
                                 <Button variant="secondary">
                                     <Download className="mr-2 h-4 w-4" />
                                     Download Resume
