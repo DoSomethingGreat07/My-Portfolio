@@ -7,11 +7,11 @@ import { Trophy } from "lucide-react";
 const hackathons = [
   {
     title: "Microsoft HackWithChicago Finalist",
-    description: "Finalist at the Microsoft HackWithChicago hackathon for building Lazarus, an autonomous clinical R&D swarm."
+    description: "Finalist at the Microsoft HackWithChicago hackathon for building BugOrbit, a graph-powered incident intelligence platform."
   },
   {
     title: "WildHacks (Northwestern University) Top 25",
-    description: "Selected as one of the top 25 projects at WildHacks by Northwestern University for Lazarus."
+    description: "Selected as one of the top 25 projects at WildHacks by Northwestern University for PulseGrid, a real-time disaster response optimization system."
   },
   {
     title: "HackPrinceton Spring 2026 Sponsor-Track Runner-Up",
