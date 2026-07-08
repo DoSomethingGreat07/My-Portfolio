@@ -17,9 +17,9 @@ const experience = [
         ]
     },
     {
-        role: "Software Engineer",
+        role: "Software Engineer II",
         company: "Deloitte",
-        period: "Sep 2022 – Jul 2024",
+        period: "June 2023 – Jul 2024",
         location: "Hyderabad, India",
         description: [
             "Built enterprise GenAI advisory assistants using RAG over financial statements and market APIs with LangChain and vector databases, reducing manual analysis time by 40% while ensuring factual accuracy (0.91 groundedness).",
@@ -28,9 +28,9 @@ const experience = [
         ]
     },
     {
-        role: "Software Engineer",
+        role: "Software Engineer I",
         company: "Deloitte",
-        period: "May 2022 – Aug 2022",
+        period: "September 2022 – May 2023",
         location: "Hyderabad, India",
         description: [
             "Built credit risk prediction pipelines using ETL, feature engineering, and XGBoost with 5-fold cross-validation (AUC 0.86), improving loan approval accuracy by 18%.",
