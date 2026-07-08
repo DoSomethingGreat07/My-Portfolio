@@ -18,8 +18,7 @@ const education: EducationItem[] = [
     {
         degree: "Master of Science in Computer Science",
         school: "University of Illinois Chicago",
-        period: "Aug 2024 – May 2026",
-        gpa: "3.8",
+        period: "Graduated",
         coursework: "Cloud Computing, Algorithms, DBMS, Big Data Mining, Text Mining, ML on Graphs, Deep Learning with NLP"
     }
 ];
