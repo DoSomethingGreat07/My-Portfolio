@@ -8,16 +8,9 @@ const education = [
     {
         degree: "Master of Science in Computer Science",
         school: "University of Illinois Chicago",
-        period: "Aug 2024 – May 2026 (Expected)",
+        period: "Aug 2024 – May 2026",
         gpa: "3.8",
         coursework: "Cloud Computing, Algorithms, DBMS, Big Data Mining, Text Mining, ML on Graphs, Deep Learning with NLP"
-    },
-    {
-        degree: "Bachelor of Engineering in Electronics and Communication",
-        school: "Chaitanya Bharathi Institute of Technology",
-        period: "Aug 2018 – June 2022",
-        location: "Hyderabad, India",
-        focus: "Computer Networking, Operating Systems, AI and Machine Learning"
     }
 ];
 

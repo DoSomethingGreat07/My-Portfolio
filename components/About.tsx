@@ -2,8 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/Button";
-import { Download } from "lucide-react";
 import Image from "next/image";
 
 export default function About() {
@@ -45,30 +43,23 @@ export default function About() {
 
                         <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                             <p>
-                                Hi, I&apos;m <span className="text-white font-medium">Nikhil Juluri</span>, an AI and Machine Learning Engineer pursuing my Master&apos;s in Computer Science at the University of Illinois Chicago (GPA 3.8). I have a passion for building high-performance AI systems and scalable data pipelines. My journey started with a Bachelor&apos;s in Electronics and Communication from CBIT, Hyderabad, followed by over three and a half years at <span className="text-white font-medium">Deloitte</span>, where I delivered production-grade enterprise solutions in the financial domain.
+                                I&apos;m a Computer Science graduate student at the <span className="text-white font-medium">University of Illinois Chicago</span>, focused on building scalable <span className="text-white font-medium">Full Stack and AI-powered applications</span>. My experience spans enterprise software development, backend systems, cloud deployment, and GenAI integrations across financial and research domains.
                             </p>
 
                             <p>
-                                Currently, as a Graduate Research Assistant at UIC, I develop memory-efficient Python pipelines using <span className="text-white font-medium">PyArrow</span> and multiprocessing, achieving a <span className="text-white font-medium">35% memory reduction</span> in large-scale data workflows. I recently worked as a Data Analyst at <span className="text-white font-medium">SodexoMagic</span>, where I optimized operational reporting by 40% and implemented private LLM workflows for audit-style validation with <span className="text-white font-medium">87% accuracy</span> detections.
+                                I work with technologies such as <span className="text-white font-medium">Java, Spring Boot, React, TypeScript, Python, FastAPI, Node.js, Express.js, PostgreSQL, MongoDB, Docker, Kubernetes, AWS, Azure, GCP, and CI/CD pipelines</span>. I also build AI-enabled systems using <span className="text-white font-medium">LangChain, LlamaIndex, RAG, OpenAI API, Claude API, vector embeddings, FAISS, Pinecone, Chroma DB, Hugging Face, and PyTorch</span>.
                             </p>
 
                             <p>
-                                I specialize in building <span className="text-white font-medium">Retrieval-Augmented Generation (RAG)</span> systems, graph-powered incident intelligence, and high-performance inference frameworks. I am particularly interested in the intersection of <span className="text-white font-medium">Graph Neural Networks</span> and <span className="text-white font-medium">Large Language Models</span>, having developed GraphRAG systems that outperform standard dense retrieval methods.
+                                Previously, I worked at <span className="text-white font-medium">Deloitte</span> on full stack financial applications for clients including <span className="text-white font-medium">T. Rowe Price and Edward Jones</span>. At <span className="text-white font-medium">UIC</span>, I have worked on AI-driven research platforms that combine software engineering, data workflows, and machine learning to help users search, analyze, and interact with complex information more effectively.
                             </p>
 
                             <p>
-                                My technical toolkit includes <span className="text-white font-medium">PyTorch, LangChain, Neo4j, vLLM, and AWS</span>. I am driven by the challenge of translating complex research into production-ready solutions, whether it&apos;s optimizing token throughput for concurrent workloads or engineering trust-aware assistants for complex document corpora.
+                                I&apos;m looking for opportunities in <span className="text-white font-medium">Software Engineering, Full Stack Development, AI Engineering, and Full Stack AI Engineer</span> roles where I can build reliable, scalable, and intelligent products.
                             </p>
                         </div>
 
-                        <div className="mt-8">
-                            <a href="/Resume_Nikhil_Juluri_______.pdf" download>
-                                <Button variant="secondary">
-                                    <Download className="mr-2 h-4 w-4" />
-                                    Download Resume
-                                </Button>
-                            </a>
-                        </div>
+
                     </div>
                 </motion.div>
             </div>

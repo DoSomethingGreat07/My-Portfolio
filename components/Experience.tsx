@@ -6,7 +6,7 @@ import { Calendar, MapPin } from "lucide-react";
 
 const experience = [
     {
-        role: "Graduate Research Assistant",
+        role: "Software Engineer",
         company: "University of Illinois Chicago",
         period: "June 2025 – Present",
         location: "Chicago, IL",
@@ -17,18 +17,7 @@ const experience = [
         ]
     },
     {
-        role: "Data Analyst",
-        company: "SodexoMagic",
-        period: "Sep 2024 – May 2026",
-        location: "Chicago, IL",
-        description: [
-            "Created interactive dashboards in Power BI and Tableau linked to SQL databases for operational KPIs, resulting in a 40% reduction in reporting time and faster decision-making processes.",
-            "Executed data preprocessing operations on structured SQL and NoSQL (JSON) data sources using Python and Pandas, transforming unstructured data into structured datasets for repeated analysis.",
-            "Automated data processing operations through Python programming and SQL job scheduling, saving about 3–4 hours weekly from manual reporting efforts."
-        ]
-    },
-    {
-        role: "Software Engineer II — Machine Learning Engineer",
+        role: "Software Engineer",
         company: "Deloitte",
         period: "Sep 2022 – Jul 2024",
         location: "Hyderabad, India",
@@ -39,7 +28,7 @@ const experience = [
         ]
     },
     {
-        role: "Software Engineer I — Machine Learning Engineer",
+        role: "Software Engineer",
         company: "Deloitte",
         period: "May 2022 – Aug 2022",
         location: "Hyderabad, India",

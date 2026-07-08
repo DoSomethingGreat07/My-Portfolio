@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, Download, Github, FileText } from "lucide-react";
+import { ArrowDown, Github, FileText } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
 
@@ -66,19 +66,12 @@ export default function Hero() {
                     </div>
 
                     <p className="text-muted-foreground text-lg mb-8 max-w-2xl leading-relaxed">
-                        Master&apos;s student in Computer Science at UIC specializing in AI, Machine Learning, and High-Performance Inference.
-                        Passionate about building scalable GraphRAG pipelines and optimizing LLM workflows.
-                        Professional experience at Deloitte and SodexoMagic delivering enterprise-scale AI and data solutions.
+                        Master’s student in Computer Science at UIC with experience building full stack enterprise applications and AI-enabled platforms.
+                        Skilled in Java, Spring Boot, React, Python, FastAPI, AWS, Azure, GCP, and GenAI tools like LangChain, LlamaIndex, RAG, and vector databases.
+                        I enjoy designing scalable systems that connect clean user experiences with robust backend and AI workflows.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <a href="/Resume_Nikhil_Juluri_______.pdf" download>
-                            <Button variant="primary" size="lg">
-                                <Download className="mr-2 h-5 w-5" />
-                                Download Resume
-                            </Button>
-                        </a>
-
                         <a href="https://github.com/DoSomethingGreat07" target="_blank" rel="noopener noreferrer">
                             <Button variant="outline" size="lg">
                                 <Github className="mr-2 h-5 w-5" />
