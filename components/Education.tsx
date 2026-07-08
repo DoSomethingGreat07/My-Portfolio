@@ -4,7 +4,17 @@ import React from "react";
 import { motion } from "framer-motion";
 import { GraduationCap, Calendar } from "lucide-react";
 
-const education = [
+interface EducationItem {
+    degree: string;
+    school: string;
+    period: string;
+    gpa?: string;
+    coursework?: string;
+    location?: string;
+    focus?: string;
+}
+
+const education: EducationItem[] = [
     {
         degree: "Master of Science in Computer Science",
         school: "University of Illinois Chicago",
